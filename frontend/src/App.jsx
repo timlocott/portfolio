@@ -1,34 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+
+import Home from './components/Home';
+import Projects from './components/Projects';
+import WorkExp from './components/WorkExp';
+import SkillHob from './components/SkillHob';
+import Contact from './components/Contact';
+
+function Header(){
+  return (
+    <header>
+      <NavLink to="/">
+        Home
+      </NavLink>
+      <NavLink to="/projects">
+        Projects
+      </NavLink>
+      <NavLink to="/workexperience">
+        Work Experience
+      </NavLink>
+      <NavLink to="/skillshobbies">
+        Skills+Hobbies
+      </NavLink>
+      <NavLink to="/contact">
+        Contact
+      </NavLink>
+    </header>
+  )
+}
+
+function Main() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/projects" element={<Projects />}/>
+      <Route path="workexperience" element={<WorkExp />}/>
+      <Route path="/skillshobbies" element={<SkillHob />}/>
+       <Route path="/contact" element={<Contact />}/>
+    </Routes>
+  )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Main />
+    </BrowserRouter>
   )
 }
 
