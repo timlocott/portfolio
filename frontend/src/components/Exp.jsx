@@ -1,7 +1,7 @@
 function WorkExp(){
     return(
         <div>
-            WorkExp
+            Exp
         </div>
     );
 }
