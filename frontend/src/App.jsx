@@ -8,16 +8,16 @@ import Contact from './components/Contact';
 
 function Header(){
   return (
-    <header className='p-6 border-b border-darkSlateGrey bg-header'>
+    <header className='p-6 bg-header'>
       <nav className="flex flex-row justify-between">
-        <div>
-          <NavLink to="/" className='mr-4'>
+        <div className='flex flex-row w-full justify-center'>
+          <NavLink to="/" className='mr-6'>
             Home
           </NavLink>
-          <NavLink to="/projects" className='mr-4'>
+          <NavLink to="/projects" className='mr-6'>
             Projects
           </NavLink>
-          <NavLink to="/experience" className='mr-4'>
+          <NavLink to="/experience" className='mr-6'>
             Experience
           </NavLink>
           <NavLink to="/skillshobbies">
@@ -47,7 +47,7 @@ function Main() {
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col h-screen w-screen max-h-screen max-w-screen overflow-hidden'>
+      <div className='flex flex-col h-screen w-screen max-h-screen max-w-screen overflow-hidden min-w-64'>
         <Header />
         <Main />
       </div>
