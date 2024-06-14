@@ -6,6 +6,8 @@ import LMSWebsite from '../assets/LMSWebsite.jpg'
 import databaseImg from '../assets/databaseImg.jpg'
 import lifestyleApp from '../assets/lifestyleapp.jpg'
 
+import ProjectCard from './ProjectCard';
+
 function Projects(){
     return(
         <div className="px-6 flex flex-col h-screen text-black">
@@ -16,30 +18,10 @@ function Projects(){
             </div>
             <div className="flex flex-col mx-10">
                 <div className="flex flex-row flex-wrap justify-center" role="list">
-                    <div className="relative inline-block text-center m-4" role="listitem">
-                        <img className="block w-full h-72 rounded-xl border border-ebony hover:cursor-pointer min-w-12" src={uReact}/>
-                        <div className="absolute transform right-6 top-60 text-black text-right text-shadow">
-                            UReact
-                        </div>
-                    </div>
-                    <div className="relative inline-block text-center m-4" role="listitem">
-                        <img className="block w-full h-80 rounded-xl border border-ebony hover:cursor-pointer" src={LMSWebsite}/>
-                        <div className="absolute transform top-64 right-6 text-white text-right text-shadow">
-                                LMS Website
-                        </div>
-                    </div>
-                    <div className="relative inline-block text-center m-4" role="listitem">
-                        <img className="block w-full h-64 rounded-xl border border-ebony hover:cursor-pointer" src={databaseImg}/>
-                        <div className="absolute transform top-52 right-6 text-white text-right text-shadow">
-                                LMS Database
-                        </div>
-                    </div>
-                    <div className="relative inline-block text-center m-4" role="listitem">
-                        <img className="block w-full h-80 rounded-xl border border-ebony hover:cursor-pointer" src={lifestyleApp}/>
-                        <div className="absolute transform top-64 right-6 text-white text-right text-shadow">
-                                LifeStyle App
-                        </div>
-                    </div>
+                    <ProjectCard imgHeight="h-72" imgSrc={uReact} textPos="top-60" textColor="text-black" projTitle="UReact"/>
+                    <ProjectCard imgHeight="h-80" imgSrc={LMSWebsite} textPos="top-64" textColor="text-white" projTitle="LMS Website"/>
+                    <ProjectCard imgHeight="h-64" imgSrc={databaseImg} textPos="top-52" textColor="text-white" projTitle="LMS Database"/>
+                    <ProjectCard imgHeight="h-80" imgSrc={lifestyleApp} textPos="top-64" textColor="text-white" projTitle="LifeStyle App"/>
                 </div>
             </div>
         </div>
