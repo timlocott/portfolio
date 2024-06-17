@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function Header(){
   return (
-    <header className='p-6 bg-header'>
+    <header className='p-6 bg-header sticky'>
       <nav className="flex flex-row justify-between">
         <div className='flex flex-row w-full justify-center'>
           <NavLink to="/" className='mr-6'>
@@ -47,7 +47,7 @@ function Main() {
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col h-screen w-screen max-h-screen max-w-screen overflow-hidden min-w-64'>
+      <div className='flex flex-col h-screen w-screen max-h-screen max-w-screen min-w-64'>
         <Header />
         <Main />
       </div>
