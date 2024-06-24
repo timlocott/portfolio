@@ -6,7 +6,7 @@ import profilePic from '../assets/profilePic.jpg'
 
 function Home(){
     return(
-        <div className="px-6 flex flex-col justify-center h-screen text-black items-center">
+        <div className="px-6 flex flex-col justify-center h-screen text-black items-center overscroll-none">
             <div className="flex flex-row ">
                 <img src={profilePic} className='w-64 rounded-full'/>
                 <div className='flex flex-col justify-center items-center ml-6'>

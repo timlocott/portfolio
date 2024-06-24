@@ -12,6 +12,7 @@ export default {
         header: "#D4D1CE",
         ebony: "#575C55",
         persianRed: "#BB4430",
+        jasper: "#D1604D",
         bleuDeFrance: "#3083DC",
       },
     },
