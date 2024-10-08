@@ -47,7 +47,7 @@ function Main() {
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col h-screen w-screen max-h-screen max-w-screen min-w-64 overscroll-none'>
+      <div className='flex flex-col h-screen w-screen max-w-screen min-w-64 overscroll-none'>
         <Header />
         <Main />
       </div>
