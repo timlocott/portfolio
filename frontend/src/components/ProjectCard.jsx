@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-function ProjectCard({imgHeight, imgSrc, textPos, projTitle, textColor}){
+function ProjectCard({imgSrc, projTitle, textColor}){
     return (
         <div className="relative inline-block text-center m-4 hover:text-white max-w-48 max-h-64 h-64" role="listitem" onClick={() => {
                 // setProject(projTitle)

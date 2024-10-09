@@ -27,15 +27,15 @@ function Projects(){
             </div>
             <div className="flex flex-col mx-10">
                 <div className="flex flex-row flex-wrap justify-center h-full" role="list">
-                    <ProjectCard imgHeight="h-64" imgSrc={portLogo} textPos="top-60" textColor="text-white" projTitle="Personal Website"/>
-                    <ProjectCard imgHeight="h-72" imgSrc={photoGallery} textPos="top-60" textColor="text-white" projTitle="Photo Gallery"/>
-                    <ProjectCard imgHeight="h-72" imgSrc={uReact} textPos="top-60" textColor="text-white" projTitle="UReact"/>
-                    <ProjectCard imgHeight="h-80" imgSrc={chatClient} textPos="top-64" textColor="text-white" projTitle="Chat Client"/>
-                    <ProjectCard imgHeight="h-80" imgSrc={LMSWebsite} textPos="top-64" textColor="text-white" projTitle="LMS Website"/>
-                    <ProjectCard imgHeight="h-64" imgSrc={databaseImg} textPos="top-52" textColor="text-white" projTitle="LMS Database"/>
-                    <ProjectCard imgHeight="h-80" imgSrc={lifestyleApp} textPos="top-64" textColor="text-white" projTitle="LifeStyle App"/>
-                    <ProjectCard imgHeight="h-64" imgSrc={custContactSearch} textPos="top-48" textColor="text-white" projTitle="LWC Search"/>
-                    <ProjectCard imgHeight="h-72" imgSrc={fieldHistoryTracking} textPos="top-60" textColor="text-white" projTitle="Field History"/>
+                    <ProjectCard imgSrc={portLogo} textColor="text-white" projTitle="Personal Website"/>
+                    <ProjectCard imgSrc={photoGallery} textColor="text-white" projTitle="Photo Gallery"/>
+                    <ProjectCard imgSrc={uReact} textColor="text-white" projTitle="UReact"/>
+                    <ProjectCard imgSrc={chatClient} textColor="text-white" projTitle="Chat Client"/>
+                    <ProjectCard imgSrc={LMSWebsite} textColor="text-white" projTitle="LMS Website"/>
+                    <ProjectCard imgSrc={databaseImg} textColor="text-white" projTitle="LMS Database"/>
+                    <ProjectCard imgSrc={lifestyleApp} textColor="text-white" projTitle="LifeStyle App"/>
+                    <ProjectCard imgSrc={custContactSearch} textColor="text-white" projTitle="LWC Search"/>
+                    <ProjectCard imgSrc={fieldHistoryTracking} textColor="text-white" projTitle="Field History"/>
                 </div>
             </div>
             {project != "" &&
