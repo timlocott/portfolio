@@ -22,7 +22,7 @@ function ExpCard({company, dateRange, title, skills = [], description}){
                             </div>
                         ))}
                     </div>
-                    <p>{ description }</p>
+                    <p className="text-sm text-left font-light">{ description }</p>
                 </div>
             </div>
         </div>
