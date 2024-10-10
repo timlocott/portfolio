@@ -81,8 +81,8 @@ function WorkExp(){
                 className="modal rounded-xl text-white p-4 flex flex-col">
                     <div className="text-lg font-bold">{ title }</div>
                     <div className="flex flex-row justify-between">
-                        <div className="font-lightpy-2">{ company }</div>
-                        <div className="font-extralight py-2">{ dateRange }</div>
+                        <div className="font-light pb-3">{ company }</div>
+                        <div className="font-extralight pb-3">{ dateRange }</div>
                     </div>
                     <div className="flex flex-col justify-between h-full">
                          <p>{ description }</p>
