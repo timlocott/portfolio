@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function ExpCard({company, dateRange, title, skills = []}){
+function ExpCard({company, dateRange, title, skills = [], description}){
     return (
         <div className="flip-card m-4">
             <div className="flip-card-inner rounded-xl hover:cursor-pointe flex flex-col">
@@ -14,16 +14,15 @@ function ExpCard({company, dateRange, title, skills = []}){
                         { title }
                     </div>
                 </div>
-                <div className="flip-card-back rounded-xl p-2">
-                    <div className="flex flex-row">
+                <div className="flip-card-back rounded-xl p-4">
+                    <div className="flex flex-row flex-wrap">
                         {skills.map((item, index) => (
-                            <div className="bg-white rounded-xl text-ebony w-fit px-2 mr-2" key={index}>
+                            <div className="bg-white rounded-xl text-ebony w-fit px-2 mr-2 mb-2" key={index}>
                                 {item}
                             </div>
                         ))}
                     </div>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
+                    <p>{ description }</p>
                 </div>
             </div>
         </div>
