@@ -81,7 +81,6 @@ button:focus-visible {
   width: 300px;
   height: 200px;
   perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -121,5 +120,20 @@ button:focus-visible {
   background-color: #739396;
   color: white;
   transform: rotateY(180deg);
+}
+
+.modal {
+  width: 60vw;
+  height: 40vh;
+  background-color: #739396;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal:focus, 
+.modal:focus-visible {
+  outline: none;
 }
  

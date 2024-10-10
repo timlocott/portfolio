@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-loading-indicators": "^1.0.0"
+    "react-loading-indicators": "^1.0.0",
+    "react-modal": "^3.16.1"
   }
 }

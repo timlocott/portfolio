@@ -14,8 +14,8 @@ function ExpCard({company, dateRange, title, skills = [], description}){
                         { title }
                     </div>
                 </div>
-                <div className="flip-card-back rounded-xl p-4">
-                    <div className="flex flex-row flex-wrap">
+                <div className="flip-card-back rounded-xl p-4 flex flex-col justify-end">
+                    <div className="flex flex-row flex-wrap-reverse items-center">
                         {skills.map((item, index) => (
                             <div className="bg-white rounded-xl text-ebony w-fit px-2 mr-2 mb-2" key={index}>
                                 {item}
