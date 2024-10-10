@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { useState } from 'react';
+import OrbitProgress from 'react-loading-indicators/OrbitProgress';
 
 import uReact from '../assets/UReactFull.png'
 import LMSWebsite from '../assets/LMSWebsite.jpg'
@@ -13,7 +14,7 @@ import chatClient from '../assets/chatClient.jpg'
 import photoGallery from '../assets/photoGallery.jpg'
 import portLogo from '../assets/portLogo.png'
 
-import ProjectCard from './ProjectCard';
+const ProjectCard = lazy(() => import('./ProjectCard'));
 import ProjectInfo from './ProjectInfo';
 
 function Projects(){
@@ -27,15 +28,17 @@ function Projects(){
             </div>
             <div className="flex flex-col mx-10">
                 <div className="flex flex-row flex-wrap justify-center h-full" role="list">
-                    <ProjectCard imgSrc={portLogo} textColor="text-white" projTitle="Personal Website"/>
-                    <ProjectCard imgSrc={photoGallery} textColor="text-white" projTitle="Photo Gallery"/>
-                    <ProjectCard imgSrc={uReact} textColor="text-white" projTitle="UReact"/>
-                    <ProjectCard imgSrc={chatClient} textColor="text-white" projTitle="Chat Client"/>
-                    <ProjectCard imgSrc={LMSWebsite} textColor="text-white" projTitle="LMS Website"/>
-                    <ProjectCard imgSrc={databaseImg} textColor="text-white" projTitle="LMS Database"/>
-                    <ProjectCard imgSrc={lifestyleApp} textColor="text-white" projTitle="LifeStyle App"/>
-                    <ProjectCard imgSrc={custContactSearch} textColor="text-white" projTitle="LWC Search"/>
-                    <ProjectCard imgSrc={fieldHistoryTracking} textColor="text-white" projTitle="Field History"/>
+                    <Suspense fallback={<OrbitProgress variant="disc" color="#575C55" size="medium" text="" textColor=""/>}>
+                        <ProjectCard imgSrc={portLogo} textColor="text-white" projTitle="Personal Website"/>
+                        <ProjectCard imgSrc={photoGallery} textColor="text-white" projTitle="Photo Gallery"/>
+                        <ProjectCard imgSrc={uReact} textColor="text-white" projTitle="UReact"/>
+                        <ProjectCard imgSrc={chatClient} textColor="text-white" projTitle="Chat Client"/>
+                        <ProjectCard imgSrc={LMSWebsite} textColor="text-white" projTitle="LMS Website"/>
+                        <ProjectCard imgSrc={databaseImg} textColor="text-white" projTitle="LMS Database"/>
+                        <ProjectCard imgSrc={lifestyleApp} textColor="text-white" projTitle="LifeStyle App"/>
+                        <ProjectCard imgSrc={custContactSearch} textColor="text-white" projTitle="LWC Search"/>
+                        <ProjectCard imgSrc={fieldHistoryTracking} textColor="text-white" projTitle="Field History"/>
+                    </Suspense>
                 </div>
             </div>
             {project != "" &&
