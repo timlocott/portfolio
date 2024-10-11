@@ -55,6 +55,10 @@ button:focus,
 button:focus-visible {
   outline: 4px auto #D4D1CE;
 }
+
+.active {
+  color: #587274 !important;
+}
 .source-code-pro-code_font {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
