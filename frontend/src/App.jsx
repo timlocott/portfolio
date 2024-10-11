@@ -11,20 +11,20 @@ function Header(){
     <header className='p-6 bg-header sticky'>
       <nav className="flex flex-row justify-between">
         <div className='flex flex-row w-full justify-center'>
-          <NavLink to="/" className='mr-6 navLink'>
+          <NavLink to="/" className='mr-6'>
             Home
           </NavLink>
-          <NavLink to="/projects" className='mr-6 navLink'>
+          <NavLink to="/projects" className='mr-6'>
             Projects
           </NavLink>
-          <NavLink to="/experience" className='mr-6 navLink'>
+          <NavLink to="/experience" className='mr-6'>
             Experience
           </NavLink>
-          <NavLink to="/skillshobbies" className='navLink'>
+          <NavLink to="/skillshobbies">
             Skills+Hobbies
           </NavLink>
         </div>
-        <NavLink to="/contact" className='navLink'>
+        <NavLink to="/contact">
           Contact
         </NavLink>
       </nav>
