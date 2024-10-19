@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 function Contact(){
     return(
         <div className="text-white px-6 flex flex-col h-screen justify-center items-center">
@@ -12,8 +16,17 @@ function Contact(){
                         </div>
                     </div>
                     <div className="flex flex-row ml-80 justify-end">
-                        <a className="bg-persianRed text-white hover:bg-jasper p-2 rounded-2xl" href="mailto:tsam.cottrell@gmail.com">
-                            email me!
+                        <a className="bg-persianRed text-white hover:bg-jasper p-2 rounded-2xl mr-4" href="mailto:tsam.cottrell@gmail.com">
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                            Email Me
+                        </a>
+                        <a className="bg-bleuDeFrance text-white hover:bg-blue-600 p-2 rounded-2xl mr-4" href="https://www.linkedin.com/in/tim-cottrell/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                            LinkedIn
+                        </a>
+                        <a className="bg-ebony text-white hover:bg-gray-700 p-2 rounded-2xl" href="https://github.com/timlocott" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                            GitHub
                         </a>
                     </div>
                 </div>
