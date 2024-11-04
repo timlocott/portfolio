@@ -14,6 +14,7 @@ function WorkExp(){
     const [dateRange, setDateRange] = React.useState("");
     const [skills, setSkills] = React.useState([]);
     const [hasWebsiteLink, setHasWebsiteLink] = React.useState(false);
+    const [websiteLink, setWebsiteLink] = React.useState(false);
 
     function openModal(){
         setIsOpen(true);
@@ -24,7 +25,7 @@ function WorkExp(){
         setHasWebsiteLink(false);
     }
 
-    function handleClick(_title, _company, _dateRange, _skills, _description, _hasWebsiteLink){
+    function handleClick(_title, _company, _dateRange, _skills, _description, _hasWebsiteLink, _websiteLink = ""){
         openModal();
         setTitle(_title);
         setCompany(_company);
@@ -32,6 +33,7 @@ function WorkExp(){
         setSkills(_skills);
         setDescription(_description);
         setHasWebsiteLink(_hasWebsiteLink);
+        setWebsiteLink(_websiteLink);
     }
 
     return(
@@ -42,7 +44,8 @@ function WorkExp(){
                     "Aug 2023 - May 2024",
                     ["Flutter","Python","AWS"],
                     "Built a cross-platform HIPAA-compliant mobile application from a raw prototype built on Matlab scripts, expensive sensors, and manual processes. This app enables easy concussion testing, managing patient test history, and empowering clinicians to make informed treatment plans and diagnoses while also saving time and money.",
-                    true
+                    true,
+                    "https://sites.google.com/view/ureact/home"
                 )}>
                     <ExpCard company="University of Utah NAL Lab" 
                         dateRange="Aug 2023 - May 2024"
@@ -54,7 +57,7 @@ function WorkExp(){
                     "Aug 2023 - Dec 2023",
                     [],
                     "Collect statistics from live PAC-12 football games, requiring attention to detail, accuracy, and efficiency. Aggregate game statistics with game footage, enabling coaching staff to accurately leverage game film.",
-                    false
+                    false,
                 )}>
                     <ExpCard company="Tempus Ex Machina" 
                         dateRange="Aug 2023 - Dec 2023"
@@ -129,7 +132,7 @@ function WorkExp(){
                                     </div>
                                 ))}
                             </div>
-                           <a href="https://sites.google.com/view/ureact/home?pli=1">
+                           <a href={websiteLink}>
                                  { hasWebsiteLink && <button className="w-fit border-none pr-0">
                                     <img src={webLink} className="size-10"/>
                                 </button>}
