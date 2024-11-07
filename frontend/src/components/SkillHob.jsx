@@ -1,8 +1,12 @@
+import SkillCard from "./SkillCard";
+
 function SkillHob(){
     return(
-        <div>
-            SkillHob
-        </div>
+        <>
+            <div className="text-black flex flex-row justify-center">
+                <SkillCard/>
+            </div>
+        </>
     );
 }
 
