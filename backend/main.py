@@ -4,8 +4,8 @@ from backend.routers.experiences import exp_router
 from backend.routers.projects import proj_router
 
 app = FastAPI(
-    title="Pony Express API",
-    description="Chat application",
+    title="Portfolio API",
+    description="Personal website",
     version="0.1.0",
 )
 
