@@ -18,7 +18,7 @@ class Experience(SQLModel):
 class ExperienceCollection(BaseModel):
     """Represents an API response for a collection of experiences."""
     meta: Metadata
-    messages: list[Experience]
+    experiences: list[Experience]
 
 class ExperienceResponse(BaseModel):
     experience: Experience
@@ -34,7 +34,7 @@ class Project(SQLModel):
 class ProjectCollection(BaseModel):
     """Represents an API response for a collection of projects."""
     meta: Metadata
-    messages: list[Project]
+    projects: list[Project]
 
 class ProjectResponse(BaseModel):
     project: Project

@@ -10,9 +10,17 @@ class ExperienceInDB(SQLModel, table=True):
     title: str
     company: str
     dateRange: str
-    skills: list[str]
+    skills: list[str] = Field(default=None, sa_column=str)
     description: str
-    link: Optional[str] = Field(default=None)
+    link: Optional[str] = Field(default="")
+
+    @property
+    def tags_list(self) -> list[str]:
+        return self.tags.split(",") if self.tags else []
+
+    @tags_list.setter
+    def tags_list(self, value: list[str]):
+        self.tags = ",".join(value)
 
 class ProjectInDB(SQLModel, table=True):
     """DB model for projects."""
@@ -22,5 +30,13 @@ class ProjectInDB(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     title: str
     dateRange: str
-    skills: list[str]
-    link: Optional[str] = Field(default=None)
+    skills: list[str] = Field(default=None, sa_column=str)
+    link: Optional[str] = Field(default="")
+
+    @property
+    def tags_list(self) -> list[str]:
+        return self.tags.split(",") if self.tags else []
+
+    @tags_list.setter
+    def tags_list(self, value: list[str]):
+        self.tags = ",".join(value)
