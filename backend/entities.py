@@ -21,6 +21,7 @@ class ExperienceCollection(BaseModel):
     experiences: list[Experience]
 
 class ExperienceResponse(BaseModel):
+    """Represents an expereince response"""
     experience: Experience
 
 class Project(SQLModel):
@@ -37,6 +38,7 @@ class ProjectCollection(BaseModel):
     projects: list[Project]
 
 class ProjectResponse(BaseModel):
+    """Represents a project response."""
     project: Project
 
 
