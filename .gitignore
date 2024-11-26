@@ -1,0 +1,72 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+dist-ssr/
+build/
+
+# Local environment files
+*.local
+.env
+.env.*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Jest coverage directory
+coverage/
+
+# Babel cache
+.babelrc
+.babelrc.js
+.babelrc.json
+.babelrc.cjs
+.babelrc.mjs
+.babelrc.config.js
+.babelrc.config.json
+.babelrc.config.cjs
+.babelrc.config.mjs
+
+# ESLint cache
+.eslintcache
+
+# Parcel cache
+.cache/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Storybook build directory
+storybook-static/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# Temporary files
+tmp/
+temp/
