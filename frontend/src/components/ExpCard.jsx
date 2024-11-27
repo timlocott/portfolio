@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 function ExpCard({company, dateRange, title, skills = []}){
     return (
         <div className="flip-card m-4">

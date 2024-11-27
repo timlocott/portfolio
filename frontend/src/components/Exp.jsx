@@ -37,7 +37,7 @@ function WorkExp(){
     }
 
     return(
-        <div id="exp" className="flex flex-col items-center justify-center h-screen m-4">
+        <div id="exp" title="experience" className="flex flex-col items-center justify-center h-screen m-4">
             <div className="flex flex-row justify-around w-full flex-wrap">
                 <div onClick={() => handleClick("Mobile Application Developer",
                     "University of Utah NAL Lab",

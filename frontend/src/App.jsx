@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Exp from './components/Exp';
@@ -55,4 +56,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
