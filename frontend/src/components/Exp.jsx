@@ -37,9 +37,10 @@ function WorkExp(){
     }
 
     return(
-        <div id="exp" title="experience" className="flex flex-col items-center justify-center h-screen m-4">
+        <div id="exp" className="flex flex-col items-center justify-center h-screen m-4">
+            <div className="hidden" data-testid="hidden-test"></div>
             <div className="flex flex-row justify-around w-full flex-wrap">
-                <div onClick={() => handleClick("Mobile Application Developer",
+                <div title="experience" onClick={() => handleClick("Mobile Application Developer",
                     "University of Utah NAL Lab",
                     "Aug 2023 - May 2024",
                     ["Flutter","Python","AWS"],
@@ -52,7 +53,7 @@ function WorkExp(){
                         title="Mobile Application Developer" 
                         skills={["Flutter","Python","AWS"]} />
                 </div>
-                <div onClick={() => handleClick("Analyst",
+                <div title="experience" onClick={() => handleClick("Analyst",
                     "Tempus Ex Machina",
                     "Aug 2023 - Dec 2023",
                     [],
@@ -64,7 +65,7 @@ function WorkExp(){
                         title="Analyst" 
                         skills={[]}/>
                 </div>
-                <div onClick={() => handleClick("Software Engineering Intern",
+                <div title="experience" onClick={() => handleClick("Software Engineering Intern",
                     "L3 Harris Technologies",
                     "Jun 2022 - Dec 2022",
                     ["Angular", "TypeScript", "HTML", "CSS"],
@@ -76,7 +77,7 @@ function WorkExp(){
                         title="Software Engineering Intern" 
                         skills={["Angular", "TypeScript", "HTML", "CSS"]}/>
                 </div>
-                <div onClick={() => handleClick("Salesforce Intern",
+                <div title="experience" onClick={() => handleClick("Salesforce Intern",
                     "University of Utah",
                     "Feb 2021 - Jun 2022",
                     ["SQL", "Apex", "JavaScript","LWC"],
@@ -88,7 +89,7 @@ function WorkExp(){
                         title="Salesforce Intern" 
                         skills={["SQL", "Apex", "JavaScript","LWC"]}/>
                 </div>
-                <div onClick={() => handleClick("Mover",
+                <div title="experience" onClick={() => handleClick("Mover",
                     "A-1 Pioneer Moving & Storage",
                     "May 2020 - Feb 2021",
                     [],
@@ -100,7 +101,7 @@ function WorkExp(){
                         title="Mover" 
                         skills={[]}/>
                 </div>
-                <div onClick={() => handleClick("IT Assistant",
+                <div title="experience" onClick={() => handleClick("IT Assistant",
                     "Rice-Eccles Stadium",
                     "Aug 2019 - Feb 2021",
                     [],
