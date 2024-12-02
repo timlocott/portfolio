@@ -37,8 +37,7 @@ function WorkExp(){
     }
 
     return(
-        <div id="exp" className="flex flex-col items-center justify-center h-screen m-4">
-            <div className="hidden" data-testid="hidden-test"></div>
+        <div id="exp" data-testid="modal-overlay" className="flex flex-col items-center justify-center h-screen m-4">
             <div className="flex flex-row justify-around w-full flex-wrap">
                 <div title="experience" onClick={() => handleClick("Mobile Application Developer",
                     "University of Utah NAL Lab",
