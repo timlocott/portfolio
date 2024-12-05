@@ -1,5 +1,8 @@
 # IN PROGRESS
 
+# Link
+https://www.timcottrell.net/
+
 # Summary
 This is a repo for my portfolio website, where you can find information about my past projects, work experience, education, and skills.
 
