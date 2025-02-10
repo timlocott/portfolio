@@ -51,13 +51,12 @@ function Header() {
           <img src={portLogo} className="sm:hidden w-12 rounded-lg" />
         </div>
         <motion.div
-          initial={{ y: "-150%", opacity: 0 }}
+          initial={{ opacity: 0 }}
           animate={{
-            y: menuIsOpen ? "0%" : "-150%",
             opacity: menuIsOpen ? 1 : 0,
           }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed top-[80px] left-0 w-full h-full bg-header z-40"
+          className="fixed top-[90px] left-0 w-full h-full bg-header z-40"
         >
           <div className="p-2">
             <NavLink
