@@ -43,43 +43,6 @@ function Header() {
           />
           <FontAwesomeIcon icon={faX} className={menuIsOpen ? "" : "hidden"} />
         </button>
-        {/* <menu className="absolute bg-header top-16 left-0">
-          <div className={menuIsOpen ? "" : "hidden"}>
-            <NavLink
-              to="/"
-              className="block"
-              onClick={() => setMenuIsOpen(false)}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className="block"
-              onClick={() => setMenuIsOpen(false)}
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="/experience"
-              className="block"
-              onClick={() => setMenuIsOpen(false)}
-            >
-              Experience
-            </NavLink>
-            <NavLink
-              to="/skillshobbies"
-              className="block"
-              onClick={() => setMenuIsOpen(false)}
-            >
-              Skills+Hobbies
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="block"
-              onClick={() => setMenuIsOpen(false)}
-            >
-              Contact
-            </NavLink> */}
         <motion.div
           initial={{ y: "-150%", opacity: 0 }}
           animate={{
@@ -128,8 +91,6 @@ function Header() {
             </NavLink>
           </div>
         </motion.div>
-        {/* </div> */}
-        {/* </menu> */}
       </div>
     </header>
   );
