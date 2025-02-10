@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import portLogo from "./assets/portLogo.png";
 
 function Header() {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
@@ -31,18 +32,24 @@ function Header() {
         <NavLink to="/contact">Contact</NavLink>
       </nav>
       <div className="sm:hidden relative">
-        <button
-          className="border-white border-solid border-2 rounded-lg z-50 py-2 px-4"
-          onClick={() => {
-            setMenuIsOpen(!menuIsOpen);
-          }}
-        >
-          <FontAwesomeIcon
-            icon={faBars}
-            className={menuIsOpen ? "hidden" : ""}
-          />
-          <FontAwesomeIcon icon={faX} className={menuIsOpen ? "" : "hidden"} />
-        </button>
+        <div className="flex flex-row justify-between">
+          <button
+            className="border-white border-solid border-2 rounded-lg z-50 py-2 px-4"
+            onClick={() => {
+              setMenuIsOpen(!menuIsOpen);
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faBars}
+              className={menuIsOpen ? "hidden" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faX}
+              className={menuIsOpen ? "" : "hidden"}
+            />
+          </button>
+          <img src={portLogo} className="sm:hidden w-12 rounded-lg" />
+        </div>
         <motion.div
           initial={{ y: "-150%", opacity: 0 }}
           animate={{
