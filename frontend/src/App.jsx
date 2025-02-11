@@ -48,7 +48,9 @@ function Header() {
               className={menuIsOpen ? "" : "hidden"}
             />
           </button>
-          <img src={portLogo} className="sm:hidden w-12 rounded-lg" />
+          <NavLink to="/" className="!bg-transparent">
+            <img src={portLogo} className="sm:hidden w-12 rounded-lg" />
+          </NavLink>
         </div>
         <motion.div
           initial={{ opacity: 0 }}
