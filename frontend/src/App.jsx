@@ -15,7 +15,7 @@ function Header() {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
 
   return (
-    <header className={`p-6 bg-header sticky`}>
+    <header className={`p-6 bg-header sticky z-50`}>
       {/* sm breakpoint */}
       <nav className="hidden sm:flex flex-row justify-between">
         <div className="flex flex-row w-full justify-center">
@@ -37,7 +37,7 @@ function Header() {
         </NavLink>
       </nav>
       {/* Mobile view */}
-      <div className="sm:hidden relative z-40">
+      <div className="sm:hidden relative z-50">
         <div className="flex flex-row justify-between">
           <button
             className="border-white border-solid border-2 rounded-lg z-50 py-2 px-4"
@@ -68,7 +68,9 @@ function Header() {
             opacity: menuIsOpen ? 1 : 0,
           }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className={`fixed top-[90px] left-0 w-full h-full bg-header z-40`}
+          className={`fixed top-[90px] left-0 w-full h-full bg-header ${
+            menuIsOpen ? "z-50" : "hidden"
+          }`}
         >
           <div className="p-2">
             <NavLink
