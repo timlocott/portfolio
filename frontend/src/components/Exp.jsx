@@ -177,7 +177,7 @@ function WorkExp() {
         isOpen={modalIsOpen}
         ariaHideApp={false}
         onRequestClose={closeModal}
-        className="modal rounded-xl text-white p-4 flex flex-col h-[80vh] w-[80vw] sm:w-[60vw]"
+        className="modal rounded-xl text-white p-4 flex flex-col h-[80vh] w-[80vw] sm:w-[60vw] sm:h-[40vh]"
       >
         <div className="text-lg font-bold">{title}</div>
         <div className="flex flex-col sm:flex-row justify-between">
