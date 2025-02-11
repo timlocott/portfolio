@@ -57,7 +57,7 @@ button:focus-visible {
 } */
 
 .active {
-  color: white;
+  color: white !important;
   background: #587274;
 }
 .source-code-pro-code_font {

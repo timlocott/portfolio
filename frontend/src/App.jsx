@@ -18,18 +18,22 @@ function Header() {
     <header className="p-6 bg-header sticky">
       <nav className="hidden sm:flex flex-row justify-between">
         <div className="flex flex-row w-full justify-center">
-          <NavLink to="/" className="mr-6">
+          <NavLink to="/" className="mr-6 rounded-lg p-2">
             Home
           </NavLink>
-          <NavLink to="/projects" className="mr-6">
+          <NavLink to="/projects" className="mr-6 rounded-lg p-2">
             Projects
           </NavLink>
-          <NavLink to="/experience" className="mr-6">
+          <NavLink to="/experience" className="mr-6 rounded-lg p-2">
             Experience
           </NavLink>
-          <NavLink to="/skillshobbies">Skills+Hobbies</NavLink>
+          <NavLink to="/skillshobbies" className="rounded-lg p-2">
+            Skills+Hobbies
+          </NavLink>
         </div>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact" className="rounded-lg p-2">
+          Contact
+        </NavLink>
       </nav>
       <div className="sm:hidden relative">
         <div className="flex flex-row justify-between">
