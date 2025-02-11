@@ -40,18 +40,18 @@ function Header() {
       <div className="sm:hidden relative z-50">
         <div className="flex flex-row justify-between">
           <button
-            className="border-white border-solid border-2 rounded-lg z-50 py-2 px-4"
+            className="border-white border-solid border-2 active:border-lighterSlateGrey active:text-lighterSlateGrey rounded-lg z-50 py-2 px-4"
             onClick={() => {
               setMenuIsOpen(!menuIsOpen);
             }}
           >
             <FontAwesomeIcon
               icon={faBars}
-              className={menuIsOpen ? "hidden" : ""}
+              className={` ${menuIsOpen ? "hidden" : ""}`}
             />
             <FontAwesomeIcon
               icon={faX}
-              className={menuIsOpen ? "" : "hidden"}
+              className={` ${menuIsOpen ? "" : "hidden"}`}
             />
           </button>
           <NavLink

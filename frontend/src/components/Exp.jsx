@@ -3,6 +3,8 @@ import React from "react";
 import Modal from "react-modal";
 
 import webLink from "../assets/webLink.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 // Modal.setAppElement('#exp');
 
@@ -52,6 +54,7 @@ function WorkExp() {
     >
       <div className="flex flex-col sm:flex-row sm:justify-around sm:w-full sm:flex-wrap h-full max-h-[calc(100vh-120px)] overflow-y-auto">
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -73,6 +76,7 @@ function WorkExp() {
           />
         </div>
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -93,6 +97,7 @@ function WorkExp() {
           />
         </div>
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -113,6 +118,7 @@ function WorkExp() {
           />
         </div>
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -133,6 +139,7 @@ function WorkExp() {
           />
         </div>
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -153,6 +160,7 @@ function WorkExp() {
           />
         </div>
         <div
+          className="flex flex-col justify-center"
           title="experience"
           onClick={() =>
             handleClick(
@@ -179,6 +187,12 @@ function WorkExp() {
         onRequestClose={closeModal}
         className="modal rounded-xl text-white p-4 flex flex-col h-[80vh] w-[80vw] sm:w-[60vw] sm:h-[40vh]"
       >
+        <button
+          onClick={closeModal}
+          className="flex flex-col justify-center self-end text-xl font-bold border-white border-solid border-2 rounded-lg p-2 mb-2"
+        >
+          <FontAwesomeIcon icon={faX} />
+        </button>
         <div className="text-lg font-bold">{title}</div>
         <div className="flex flex-col sm:flex-row justify-between">
           <div className="font-light pb-3">{company}</div>
