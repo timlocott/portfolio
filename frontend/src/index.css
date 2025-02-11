@@ -128,7 +128,6 @@ button:focus-visible {
 }
 
 .modal {
-  width: 60vw;
   min-height: 40vh;
   max-height: fit-content;
   background-color: #739396;

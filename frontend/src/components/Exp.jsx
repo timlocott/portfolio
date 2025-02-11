@@ -177,10 +177,10 @@ function WorkExp() {
         isOpen={modalIsOpen}
         ariaHideApp={false}
         onRequestClose={closeModal}
-        className="modal rounded-xl text-white p-4 flex flex-col"
+        className="modal rounded-xl text-white p-4 flex flex-col h-[80vh] w-[80vw] sm:w-[60vw]"
       >
         <div className="text-lg font-bold">{title}</div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col sm:flex-row justify-between">
           <div className="font-light pb-3">{company}</div>
           <div className="font-extralight pb-3">{dateRange}</div>
         </div>
