@@ -62,7 +62,6 @@ function Header() {
             <NavLink
               to="/"
               className="p-4 block rounded-md"
-              activeClassName="active"
               onClick={() => setMenuIsOpen(false)}
             >
               Home
