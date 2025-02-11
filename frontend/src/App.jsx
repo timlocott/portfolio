@@ -15,7 +15,8 @@ function Header() {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
 
   return (
-    <header className="p-6 bg-header sticky">
+    <header className={`p-6 bg-header sticky`}>
+      {/* sm breakpoint */}
       <nav className="hidden sm:flex flex-row justify-between">
         <div className="flex flex-row w-full justify-center">
           <NavLink to="/" className="mr-6 rounded-lg p-2">
@@ -35,7 +36,8 @@ function Header() {
           Contact
         </NavLink>
       </nav>
-      <div className="sm:hidden relative">
+      {/* Mobile view */}
+      <div className="sm:hidden relative z-40">
         <div className="flex flex-row justify-between">
           <button
             className="border-white border-solid border-2 rounded-lg z-50 py-2 px-4"
@@ -52,7 +54,11 @@ function Header() {
               className={menuIsOpen ? "" : "hidden"}
             />
           </button>
-          <NavLink to="/" className="!bg-transparent">
+          <NavLink
+            to="/"
+            className="!bg-transparent"
+            onClick={() => setMenuIsOpen(false)}
+          >
             <img src={portLogo} className="sm:hidden w-12 rounded-lg" />
           </NavLink>
         </div>
@@ -62,7 +68,7 @@ function Header() {
             opacity: menuIsOpen ? 1 : 0,
           }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed top-[90px] left-0 w-full h-full bg-header z-40"
+          className={`fixed top-[90px] left-0 w-full h-full bg-header z-40`}
         >
           <div className="p-2">
             <NavLink
@@ -122,7 +128,7 @@ function Main() {
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col h-screen w-screen max-w-screen scroll-none overflow-hidden">
+      <div className="flex flex-col h-screen w-screen max-w-screen max-h-screen scroll-none overflow-hidden">
         <Header />
         <Main />
       </div>
