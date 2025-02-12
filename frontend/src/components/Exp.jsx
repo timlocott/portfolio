@@ -58,6 +58,28 @@ function WorkExp() {
           title="experience"
           onClick={() =>
             handleClick(
+              "Junior Software Engineer",
+              "CareCrew",
+              "Nov 2024 - Present",
+              ["HotWire Native", "Swift", "Kotlin"],
+              "Developing a mobile application, using HotWire, to simplify and coordinate care for elderly loved ones. Regularly researching latest trends and technologies to create an innovative app and experience.",
+              true,
+              "https://sites.google.com/view/ureact/home"
+            )
+          }
+        >
+          <ExpCard
+            company="CareCrew"
+            dateRange="Nov 2024 - Present"
+            title="Junior Software Engineer"
+            skills={["HotWire Native", "Swift", "Kotlin"]}
+          />
+        </div>
+        <div
+          className="flex flex-col sm:h-fit justify-center"
+          title="experience"
+          onClick={() =>
+            handleClick(
               "Mobile Application Developer",
               "University of Utah NAL Lab",
               "Aug 2023 - May 2024",
