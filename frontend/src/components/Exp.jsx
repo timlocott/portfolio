@@ -52,7 +52,7 @@ function WorkExp() {
       data-testid="modal-overlay"
       className="flex items-center justify-center m-4 sm:h-screen"
     >
-      <div className="flex flex-col sm:flex-row sm:justify-around sm:w-full sm:flex-wrap h-full max-h-[calc(100vh-120px)] overflow-y-auto">
+      <div className="flex flex-col sm:flex-row sm:justify-center sm:w-full sm:flex-wrap h-full max-h-[calc(100vh-120px)] overflow-y-auto">
         <div
           className="flex flex-col justify-center"
           title="experience"
