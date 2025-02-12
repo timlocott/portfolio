@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import resumeFile from "../assets/Tim_Cottrell_Resume.pdf";
 
 // eslint-disable-next-line no-unused-vars
 import React from "react";
@@ -15,7 +17,7 @@ function Contact() {
             <div>Interested in my past work?</div>
             <div>Want to reach out to me about exciting opportunities?</div>
           </div>
-          <div className="flex flex-col sm:flex-row lg:ml-80 justify-between h-[20vh] items-center sm:justify-end">
+          <div className="flex flex-col sm:flex-row lg:ml-80 justify-between h-[25vh] items-center sm:justify-end">
             <a
               className="bg-persianRed !text-white hover:bg-jasper px-3 py-2 rounded-xl sm:mr-4 w-60 sm:w-32 flex justify-center items-center"
               href="mailto:tsam.cottrell@gmail.com"
@@ -33,13 +35,22 @@ function Contact() {
               LinkedIn
             </a>
             <a
-              className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-xl w-60 sm:w-32 flex justify-center items-center"
+              className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-xl sm:mr-4 w-60 sm:w-32 flex justify-center items-center"
               href="https://github.com/timlocott"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} className="mr-2" />
               GitHub
+            </a>
+            <a
+              className="bg-britishRacingGreen text-white hover:bg-gray-700 px-3 py-2 rounded-xl w-60 sm:w-32 flex justify-center items-center"
+              href={resumeFile}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faFile} className="mr-2" />
+              Resume
             </a>
           </div>
         </div>

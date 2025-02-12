@@ -14,6 +14,7 @@ export default {
         persianRed: "#BB4430",
         jasper: "#D1604D",
         bleuDeFrance: "#3083DC",
+        britishRacingGreen: "#0E402D",
       },
     },
   },
