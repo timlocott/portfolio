@@ -1,42 +1,51 @@
 // eslint-disable-next-line no-unused-vars
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React from "react";
 
-function Contact(){
-    return(
-        <div className="text-white px-6 flex flex-col h-screen justify-center items-center">
-            <div className="w-screen p-20 bg-lighterSlateGrey">
-                <div className="flex flex-col items-center justify-center">
-                    <div className="flex flex-col text-start mb-4">
-                        <div>
-                            Interested in my past work?
-                        </div>
-                        <div>
-                            Want to reach out to me about exciting opportunities?
-                        </div>
-                    </div>
-                    <div className="flex flex-row ml-80 justify-end">
-                        <a className="bg-persianRed text-white hover:bg-jasper px-3 py-2 rounded-2xl mr-4" href="mailto:tsam.cottrell@gmail.com">
-                            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                            Email Me
-                        </a>
-                        <a className="bg-bleuDeFrance text-white hover:bg-blue-600 px-3 py-2 rounded-2xl mr-4" href="https://www.linkedin.com/in/tim-cottrell/" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
-                            LinkedIn
-                        </a>
-                        <a className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-2xl" href="https://github.com/timlocott" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} className="mr-2" />
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+function Contact() {
+  return (
+    <div className="text-white px-6 flex flex-col h-screen justify-center items-center">
+      <div className="rounded-xl sm:rounded-none w-[80vw] h-full max-h-[50vh] p-10 sm:w-screen sm:max-h-[30vh] sm:p-20 bg-lighterSlateGrey">
+        <div className="flex flex-col items-center sm:justify-center justify-between h-full">
+          <div className="flex flex-col text-start mb-4">
+            <div>Interested in my past work?</div>
+            <div>Want to reach out to me about exciting opportunities?</div>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:ml-80 justify-between h-[20vh] items-center sm:justify-end">
+            <a
+              className="bg-persianRed !text-white hover:bg-jasper px-3 py-2 rounded-xl sm:mr-4 max-w-60 sm:w-30 flex justify-center items-center"
+              href="mailto:tsam.cottrell@gmail.com"
+            >
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+              Email Me
+            </a>
+            <a
+              className="bg-bleuDeFrance text-white hover:bg-blue-600 px-3 py-2 rounded-xl sm:mr-4 max-xw-60 sm:w-30 flex justify-center items-center"
+              href="https://www.linkedin.com/in/tim-cottrell/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+              LinkedIn
+            </a>
+            <a
+              className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-xl max-w-60 sm:w-30 flex justify-center items-center"
+              href="https://github.com/timlocott"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="mr-2" />
+              GitHub
+            </a>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Contact;

@@ -28,9 +28,9 @@ function Header() {
           <NavLink to="/experience" className="mr-6 rounded-lg p-2">
             Experience
           </NavLink>
-          <NavLink to="/skillshobbies" className="rounded-lg p-2">
+          {/* <NavLink to="/skillshobbies" className="rounded-lg p-2">
             Skills+Hobbies
-          </NavLink>
+          </NavLink> */}
         </div>
         <NavLink to="/contact" className="rounded-lg p-2">
           Contact
@@ -94,13 +94,13 @@ function Header() {
             >
               Experience
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/skillshobbies"
               className="p-4 block rounded-md"
               onClick={() => setMenuIsOpen(false)}
             >
               Skills+Hobbies
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/contact"
               className="p-4 block rounded-md"
@@ -121,7 +121,7 @@ function Main() {
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/experience" element={<Exp />} />
-      <Route path="/skillshobbies" element={<SkillHob />} />
+      {/* <Route path="/skillshobbies" element={<SkillHob />} /> */}
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
