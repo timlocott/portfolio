@@ -17,14 +17,14 @@ function Contact() {
           </div>
           <div className="flex flex-col sm:flex-row lg:ml-80 justify-between h-[20vh] items-center sm:justify-end">
             <a
-              className="bg-persianRed !text-white hover:bg-jasper px-3 py-2 rounded-xl sm:mr-4 max-w-60 sm:w-30 flex justify-center items-center"
+              className="bg-persianRed !text-white hover:bg-jasper px-3 py-2 rounded-xl sm:mr-4 w-60 max-w-60 sm:w-30 flex justify-center items-center"
               href="mailto:tsam.cottrell@gmail.com"
             >
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
               Email Me
             </a>
             <a
-              className="bg-bleuDeFrance text-white hover:bg-blue-600 px-3 py-2 rounded-xl sm:mr-4 max-w-60 sm:w-30 flex justify-center items-center"
+              className="bg-bleuDeFrance text-white hover:bg-blue-600 px-3 py-2 rounded-xl sm:mr-4 w-60 max-w-60 sm:w-30 flex justify-center items-center"
               href="https://www.linkedin.com/in/tim-cottrell/"
               target="_blank"
               rel="noopener noreferrer"
@@ -33,7 +33,7 @@ function Contact() {
               LinkedIn
             </a>
             <a
-              className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-xl max-w-60 sm:w-30 flex justify-center items-center"
+              className="bg-ebony text-white hover:bg-gray-700 px-3 py-2 rounded-xl w-60 max-w-60 sm:w-30 flex justify-center items-center"
               href="https://github.com/timlocott"
               target="_blank"
               rel="noopener noreferrer"
