@@ -55,7 +55,7 @@ function Projects() {
   }
 
   return (
-    <div className="mx-4 flex flex-col h-screen text-black">
+    <div className="mx-4 flex flex-col sm:justify-center h-screen text-black">
       {/* <div className="flex flex-row w-full justify-center text-white my-6 bg-transparent sticky">
         <button className="w-48 mr-10 bg-ebony rounded-full">
           Web Development
@@ -80,7 +80,7 @@ function Projects() {
                 "Portfolio",
                 "Jun 2024 - Present",
                 ["React", "HTML", "Tailwind CSS", "Git", "AWS"],
-                "IN PROGRESS: A simple website showcasing past projects, skills, and work experience. Users are also able to use the website to contact me via email.",
+                "A mobile-first website showcasing past projects, skills, and work experience. Users are also able to use the website to contact me via various methods and download my resume.",
                 true,
                 "https://www.timcottrell.net/"
               )
