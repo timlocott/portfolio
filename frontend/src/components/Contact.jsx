@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import resumeFile from "../assets/Tim_Cottrell_Resume.pdf";
+import resumeFile from "../assets/TCResume.pdf";
 
 // eslint-disable-next-line no-unused-vars
 import React from "react";

@@ -58,9 +58,30 @@ function WorkExp() {
           title="experience"
           onClick={() =>
             handleClick(
+              "Associate Software Engineer",
+              "Orem City",
+              "June 2025 - Present",
+              ["TypeScript", "React", "C#", "SQL"],
+              "Creating a city-wide platform where citizens can interact with the many facets of Orem, facilitating a seamless and responsive experience for thousands of citizens. Working closely with stakeholders and users to develop and maintain a full suite of internal applications and tools to help make operations more efficient and intuitive. Collaborating daily with an energetic, fast-paced team that strives for high code quality, best practices, and reusability using React, TypeScript, and C#.",
+              false
+            )
+          }
+        >
+          <ExpCard
+            company="Orem City"
+            dateRange="June 2025 - Present"
+            title="Associate Software Engineer"
+            skills={["TypeScript", "React", "C#", "SQL"]}
+          />
+        </div>
+        <div
+          className="flex flex-col sm:h-fit justify-center"
+          title="experience"
+          onClick={() =>
+            handleClick(
               "Junior Software Engineer",
               "CareCrew",
-              "Nov 2024 - Present",
+              "Nov 2024 - May 2025",
               ["HotWire Native", "Swift", "Kotlin"],
               "Developing a mobile application, using HotWire, to simplify and coordinate care for elderly loved ones. Regularly researching latest trends and technologies to create an innovative app and experience.",
               true,
@@ -70,7 +91,7 @@ function WorkExp() {
         >
           <ExpCard
             company="CareCrew"
-            dateRange="Nov 2024 - Present"
+            dateRange="Nov 2024 - May 2025"
             title="Junior Software Engineer"
             skills={["HotWire Native", "Swift", "Kotlin"]}
           />
