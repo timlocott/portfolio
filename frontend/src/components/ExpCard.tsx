@@ -1,7 +1,4 @@
-/* eslint-disable react/prop-types */
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-function ExpCard({ company, dateRange, title, skills = [] }) {
+function ExpCard({ company, dateRange, title, skills = [] }: { company: string; dateRange: string; title: string; skills?: readonly string[], description?: string, websiteLink?: string }) {
   return (
     <div className="flip-card m-4">
       <div className="flip-card-inner rounded-xl flex flex-col">

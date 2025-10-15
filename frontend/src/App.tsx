@@ -4,7 +4,7 @@ import React from "react";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Exp from "./components/Exp";
-import SkillHob from "./components/SkillHob";
+// import SkillHob from "./components/SkillHob";
 import Contact from "./components/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";

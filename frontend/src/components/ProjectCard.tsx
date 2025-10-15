@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import React from "react";
 import { useState } from "react";
 import OrbitProgress from "react-loading-indicators/OrbitProgress";
 
-function ProjectCard({ imgSrc, projTitle, textColor }) {
+function ProjectCard({ imgSrc, projTitle, textColor }: { imgSrc: string, projTitle: string, textColor: string }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   {
     !imageLoaded && (

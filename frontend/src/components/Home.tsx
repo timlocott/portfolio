@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-
-import React from "react";
 import profilePic from "../assets/profilePic.jpg";
 
 function Home() {

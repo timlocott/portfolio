@@ -25,9 +25,9 @@ function Projects() {
   const [description, setDescription] = React.useState("");
   const [title, setTitle] = React.useState("");
   const [dateRange, setDateRange] = React.useState("");
-  const [skills, setSkills] = React.useState([]);
+  const [skills, setSkills] = React.useState<string[]>([]);
   const [hasWebsiteLink, setHasWebsiteLink] = React.useState(false);
-  const [websiteLink, setWebsiteLink] = React.useState(false);
+  const [websiteLink, setWebsiteLink] = React.useState("");
 
   function openModal() {
     setIsOpen(true);
@@ -38,12 +38,12 @@ function Projects() {
   }
 
   function handleClick(
-    _title,
-    _dateRange,
-    _skills,
-    _description,
-    _hasWebsiteLink,
-    _websiteLink = ""
+    _title: string,
+    _dateRange: string,
+    _skills: string[],
+    _description: string,
+    _hasWebsiteLink: boolean,
+    _websiteLink: string = ""
   ) {
     openModal();
     setTitle(_title);
